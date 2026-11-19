@@ -1,0 +1,19 @@
+# NairaPay: Modikane's example app. It has a planted double-debit bug.
+# Run from this folder:  npx modikane doctor   then   npx modikane check
+# Run the fixed version: set FIXED=1 in your shell first
+#   PowerShell: $env:FIXED=1   ·   Git Bash / macOS / Linux: FIXED=1 npx modikane check
+
+app:
+  start: node server.mjs
+  port: 4000
+  ready: /
+
+flows:
+  - name: send-money
+    money: true
+    goal: >
+      Send 5000 naira to Chidi using the form.
+      Then open the History page and store the number of transfers as 'transfer_count'
+      and the balance as 'balance'. Check that there is exactly 1 transfer and the balance is 15,000 naira.
+
+conditions: [phone, slow-3g, drop-after-commit]

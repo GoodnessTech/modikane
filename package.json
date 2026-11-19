@@ -1,0 +1,40 @@
+{
+  "name": "modikane",
+  "version": "0.1.0",
+  "description": "Make Kane CLI verify your app the way Lagos uses it: a 412px Android phone, slow 3G, and connections that drop after the server already moved the money.",
+  "type": "module",
+  "bin": {
+    "modikane": "bin/modikane.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test/run-tests.mjs"
+  },
+  "keywords": [
+    "kane-cli",
+    "testing",
+    "ai-agents",
+    "claude-code",
+    "mobile",
+    "network",
+    "verification"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GoodnessTech/modikane.git"
+  },
+  "dependencies": {
+    "puppeteer-core": "^25.18.1",
+    "yaml": "^2.9.1"
+  }
+}
