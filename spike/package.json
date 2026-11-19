@@ -1,0 +1,16 @@
+{
+  "name": "modikane-spike",
+  "version": "1.0.0",
+  "description": "Day-1 risk test: can Kane CLI verify a flow under Lagos conditions?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "puppeteer-core": "^25.18.1"
+  }
+}
